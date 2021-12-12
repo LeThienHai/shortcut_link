@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div class="main">
-        <div class="container">
-            <div class="content">
-                <h1 class="content__text text-white">Rút gọn link miễn phí</h1>
-                <p class="content__description text-white">Website rút gọn link miễn phí, thu gọn liên kết, rút ngắn link theo tên tùy chỉnh, gắn mã theo dõi miễn phí, short link, Free URL Shortener Jii Li</p>  
-                <div class="content__input">
-                    <input type="text" class="user-input" placeholder="Dán link cần rút gọn">
-                </div>
-                <button class="input__submit">RÚT GỌN</button>    
-            </div>
-            <div class="imgage">
-                <img src="./img/UsmtNm_hero_Short-URl-Banner2.png" alt="">
-            </div>
-        </div>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Link</p>
+        <a id="link" href="http://">asdasdasd</a>
+      </div>
     </div>
-</body>
+    <div class="main">
+      <div class="container">
+        <div class="content">
+          <h1 class="content__text text-white">Rút gọn link miễn phí</h1>
+          <p class="content__description text-white">
+            Website rút gọn link miễn phí, thu gọn liên kết, rút ngắn link theo
+            tên tùy chỉnh, gắn mã theo dõi miễn phí, short link, Free URL
+            Shortener Jii Li
+          </p>
+          <div class="content__input">
+            <input
+              type="text"
+              class="user-input"
+              placeholder="Dán link cần rút gọn"
+            />
+          </div>
+          <button class="input__submit">RÚT GỌN</button>
+        </div>
+        <div class="imgage">
+          <img src="./img/UsmtNm_hero_Short-URl-Banner2.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
 </html>
