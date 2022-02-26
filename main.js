@@ -1,5 +1,5 @@
-const END_POINT = "http://localhost:3000/api";
-const SERVER_LINK = "http://localhost:3000";
+const END_POINT = "https://mt-s-link.herokuapp.com/api";
+const SERVER_LINK = "https://mt-s-link.herokuapp.com";
 
 const input_submit = document.querySelector(".input__submit");
 const input_value = document.querySelector(".user-input");
