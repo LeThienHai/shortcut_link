@@ -5,26 +5,26 @@ const input_submit = document.querySelector(".input__submit");
 const input_value = document.querySelector(".user-input");
 const link = document.querySelector("#link");
 
-// input_submit.addEventListener("click", (e) => {
-//   const value = input_value.value;
-//   fetch(END_POINT + "/link/generate", {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify({
-//       link: value,
-//     }),
-//   })
-//     .then((res) => res.json())
-//     .then((result) => {
-//       link.setAttribute("href", SERVER_LINK + "/" + result.data.shortedLink);
-//       link.textContent = SERVER_LINK + "/" + result.data.shortedLink;
-//       console.log(SERVER_LINK + "/" + result.data.shortedLink);
+input_submit.addEventListener("click", (e) => {
+  const value = input_value.value;
+  fetch(END_POINT + "/link/generate", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      link: value,
+    }),
+  })
+    .then((res) => res.json())
+    .then((result) => {
+      link.setAttribute("href", SERVER_LINK + "/" + result.data.shortedLink);
+      link.textContent = SERVER_LINK + "/" + result.data.shortedLink;
+      console.log(SERVER_LINK + "/" + result.data.shortedLink);
 
-//       modal.style.display = "block";
-//     });
-// });
+      modal.style.display = "block";
+    });
+});
 
 var modal = document.getElementById("myModal");
 modal.style.display = "block";
